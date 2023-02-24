@@ -7,7 +7,74 @@
     <title>Document</title>
   </head>
   <body>
-    <p>Hello World</p>
-    <p>Hello World, we are software developers!</p>
+
+    <div>
+      <h1 id="title">Microverse survey form</h1>
+      <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero animi repudiandae nihil
+        ullam ad. Eaque, quidem deleniti. Libero fuga, numquam quam quasi, cumque, ex eos doloremque perspiciatis hic
+        rerum velit facilis dolorum eum iusto deserunt?
+      </p>
+    </div>
+
+
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input required id="name" type="text" placeholder="Enter your full name">
+      </div>
+
+      <div>
+        <label id="email-label" for="mail">email</label>
+        <input required id="email" type="email" placeholder="Enter your email">
+      </div>
+
+      <div>
+        <label id="number-label" for="number">Number</label>
+        <input id="number" type="number" min="10" max="99" placeholder="Enter your cellphone number">
+      </div>
+      
+      <div>
+        <select id="dropdown">
+          <option value="value1">Frontend developer</option>
+          <option value="value2">Backend developer</option>
+          <option value="value3">SQL expert</option>
+          <option value="value4">PHP senior</option>
+        </select>
+      </div>
+
+      <div>
+          <p>Tell us your experience</p>
+          <input type="radio" name="radiogroup" for="op1" value="Rookie">
+          <label for="op1">Rookie</label>
+  
+          <input type="radio" name="radiogroup" for="op2" value="Advanced">
+          <label for="op2">Advanced</label>
+  
+          <input type="radio" name="radiogroup" for="op3" value="Senior">
+          <label for="op3">Senior</label>
+      </div>
+
+      <div>
+        <p>What do you want to improve</p>
+        <input type="checkbox" for="js" value="JS">
+        <label for="js">JavaScript</label>
+
+        <input type="checkbox" for="html" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" for="css" value="CSS">
+        <label for="css">CSS</label>
+      </div>
+
+      <div>
+        <p>Describe yourself</p>
+        <textarea cols="30" rows="10"></textarea>
+      </div>
+
+      <button id="submit" type="submit">SUBMIT</button>
+    </form>
+    
+    <!-- <p>Hello World</p>
+    <p>Hello World, we are software developers!</p> -->
   </body>
 </html>
