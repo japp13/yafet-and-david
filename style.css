@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(32, 37%, 92%);
+}
+
+#header-img {
+  width: 60px;
+  object-fit: contain;
+}
+
+#nav-bar {
+  justify-content: space-around;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+
+}
+
+.the-product{
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: hsl(228, 12%, 48%);
+  padding: 0 10px;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#email-section {
+  margin-top: 100px;
+}
+
+section::before {
+  display: block;
+  content:" ";
+  margin-top: -98px;
+  height: 98px;
+  visibility: hidden;
+  pointer-events: none;
+}
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid green;
+}
+
+#submit {
+  background-color: green;
+  color: white;
+
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.icon {
+  color: green;
+  margin-right: 30px;
+
+}
+
+#features {
+  text-align: left;
+  max-width: 800px;
+  margin:auto;
+  
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+#video {
+  width: 800px;
+  display: cover;
+
+}
+
+@media only screen and (min-width: 600px) {
+  #nav-bar {
+    flex-direction: row;
+  }
+  
+
+
+}
